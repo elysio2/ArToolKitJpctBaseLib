@@ -21,8 +21,8 @@ android {
     }
 }
 
-def siteUrl = 'https://github.com/plattysoft/ArToolKitJpctBaseLib'
-def gitUrl = 'https://github.com/plattysoft/ArToolKitJpctBaseLib.git'
+def siteUrl = 'https://github.com/elysio2/ArToolKitJpctBaseLib'
+def gitUrl = 'https://github.com/elysio2/ArToolKitJpctBaseLib.git'
 group = "org.artoolkit.ar.jpct"
 version = versionName
 
@@ -57,10 +57,10 @@ install {
         pom {
             project {
                 packaging 'aar'
-                artifactId 'ArJpctBaseLib'
+                artifactId 'ArToolKitJpctStatera'
                 version = versionName
                 // Add your description here
-                name 'ArJpctBase'
+                name 'ArToolKitJpctStatera'
                 description = 'This project provides an easy way to create AR applications for Android using ARToolKit and jPCT-AE together.'
                 url siteUrl
 
@@ -95,8 +95,8 @@ task sourcesJar(type: Jar) {
 
 task classesJar(type: Jar) {
     //from android.sourceSets.main.java
-    from 'build/outputs/aar/ArJpctBaseLib-release.aar'
-    archiveName 'ArJpctBaseLib.aar'
+    from 'build/outputs/aar/ArToolKitJpctStatera-release.aar'
+    archiveName 'ArToolKitJpctStatera.aar'
 }
 
 artifacts {
